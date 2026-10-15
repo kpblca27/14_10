@@ -55,9 +55,7 @@ console.log(checkEven(67), "и", checkEven(6));
 function countWords(str){
     let words = str.toLowerCase().match(/[а-яёa-z0-9]+/g);
     let counts = {};
-
     if (!words) return counts;
-
     for (let i = 0; i < words.length; i++) {
         let word = words[i];
         if (counts[word]) {
@@ -103,7 +101,6 @@ function transliterate(str) {
         'п':'p', 'р':'r', 'с':'s', 'т':'t', 'у':'u', 'ф':'f', 'х':'h', 'ц':'ts',
         'ч':'ch', 'ш':'sh', 'щ':'shch', 'ъ':'', 'ы':'y', 'ь':'', 'э':'e', 'ю':'yu', 'я':'ya'
     };
-    
     let result = "";
     let lower = str.toLowerCase();
     for (let i = 0; i < lower.length; i++) {
