@@ -28,7 +28,7 @@ function getSumAndAverage(arr) {
     for (let i = 0; i < arr.length; i++) {
         sum += arr[i];
     }
-    var average = sum / arr.length;
+    let average = sum / arr.length;
     return { sum: sum, average: average };
 }
 console.log(getSumAndAverage([145, 27, 367, 9, 3])); 
@@ -106,7 +106,6 @@ function transliterate(str) {
     
     let result = "";
     let lower = str.toLowerCase();
-    
     for (let i = 0; i < lower.length; i++) {
         let char = lower[i];
         if (map[char] !== undefined) {
@@ -168,9 +167,8 @@ console.log(generatePassword(90));
 
 //13 общее масивров
 function sovpadenia(arr1, arr2) {
-    for (var i = 0; i < arr1.length; i++) {
-
-        for (var j = 0; j < arr2.length; j++) {
+    for (let i = 0; i < arr1.length; i++) {
+        for (let j = 0; j < arr2.length; j++) {
             if (arr1[i] === arr2[j]) {
                 return true; 
             }
